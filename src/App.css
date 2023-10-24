@@ -1,0 +1,33 @@
+#root {
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+/* ./App.css */
+.bot-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between bots */
+}
+
+.bot-item {
+    flex: 1;
+    max-width: calc(33.33% - 20px); /* Allows three bots per row with 20px gap */
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .bot-item {
+        max-width: 100%; /* Takes full width on mobile */
+    }
+}
+
+/* .container {
+	height: 100vh;
+	width: 100%;
+	background-image: url('./Assets/perfect-loop-cube.gif');
+	background-repeat: no-repeat; 
+    background-size: cover; 
+} */

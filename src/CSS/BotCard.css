@@ -1,0 +1,95 @@
+.bot-card {
+    display: flex;
+    flex-direction: column; /* Change to column */
+    padding: 20px;
+    border: 2px solid #474291;;
+    border-radius: 10px;
+    background-color: #171935;
+    justify-content: space-between; /* Ensures space between bot details and invite button */
+    align-items: flex-start; /* Aligns children to the start */
+    width: 80%;
+    margin: auto;
+    width: 300px;
+    height: 230px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color:#fff;
+}
+
+.bot-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.bot-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns items vertically centered */
+    word-wrap: break-word; /* Breaks the text into next line if it overflows */
+}
+
+.bot-name {
+    margin-top: 0px;
+    color:#fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    width: 90%;
+}
+
+.bot-language {
+    margin-top: -1px;  /* Adjust this value to your liking */
+    color: #fff;
+    background-color: #474291;
+    width: 100px;
+    max-width: 100px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.bot-name-lang {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.bot-description {
+    margin-top: 10px;
+    color:#fff;
+    font-size: 0.9rem;
+}
+
+.bot-prefix {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:#e0e0e0;
+}
+
+.bot-actions {
+    align-self: flex-end; /* Aligns the button to the right of the card */
+    margin-top: auto;  /* Pushes button to the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly
+}
+.bot-button {
+    display: block;
+    padding: 5px;
+    width: 30%;
+    background-color: #474291;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+    /* margin-left: 5px; */
+}
+.bot-button:hover {
+    background-color: #655ed3;
+    color: #fff;
+}
