@@ -4,30 +4,20 @@
 	text-align: center;
 }
 
-/* ./App.css */
 .bot-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Adds space between bots */
+    gap: 20px; 
 }
 
 .bot-item {
     flex: 1;
-    max-width: calc(33.33% - 20px); /* Allows three bots per row with 20px gap */
+    max-width: calc(33.33% - 20px); 
 }
 
-/* For mobile devices */
 @media screen and (max-width: 768px) {
     .bot-item {
-        max-width: 100%; /* Takes full width on mobile */
+        max-width: 100%; 
     }
 }
-
-/* .container {
-	height: 100vh;
-	width: 100%;
-	background-image: url('./Assets/perfect-loop-cube.gif');
-	background-repeat: no-repeat; 
-    background-size: cover; 
-} */

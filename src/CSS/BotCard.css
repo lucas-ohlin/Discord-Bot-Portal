@@ -27,8 +27,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Aligns items vertically centered */
-    word-wrap: break-word; /* Breaks the text into next line if it overflows */
+    justify-content: center;
+    word-wrap: break-word; 
 }
 
 .bot-name {
@@ -41,7 +41,7 @@
 }
 
 .bot-language {
-    margin-top: -1px;  /* Adjust this value to your liking */
+    margin-top: -1px; 
     color: #fff;
     background-color: #474291;
     width: 100px;
@@ -70,8 +70,8 @@
 }
 
 .bot-actions {
-    align-self: flex-end; /* Aligns the button to the right of the card */
-    margin-top: auto;  /* Pushes button to the bottom */
+    align-self: flex-end; 
+    margin-top: auto; 
     width: 100%;
     display: flex;
     justify-content: space-evenly
@@ -87,7 +87,6 @@
     text-decoration: none;
     margin-top: 10px;
     transition: 0.3s;
-    /* margin-left: 5px; */
 }
 .bot-button:hover {
     background-color: #655ed3;
