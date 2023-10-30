@@ -33,7 +33,7 @@ function App() {
     return (
         <>
             <div>
-                <h1>Discord Bots</h1>
+                <h1>Discord Bot Portal</h1>
                 <BotList bots={bots} />
             </div>
         </>
