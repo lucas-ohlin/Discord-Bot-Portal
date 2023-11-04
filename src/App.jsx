@@ -4,6 +4,7 @@ import './App.css';
 
 import emcHubImage from './Assets/emchub_icon.png';
 import csImage from './Assets/csgoLogo.png';
+import rustImage from './Assets/rustLogo.png';
 
 function App() {
 
@@ -25,6 +26,16 @@ function App() {
             language: 'discord.js',
             prefix: '/',
             description: 'Information about players from CS2 & Faceit. /help - For commands.',
+            website: 'https://www.counter-strike.net/',
+            invite: 'https://discord.com/api/oauth2/authorize?client_id=920788315551170640&permissions=824633845824&scope=bot%20applications.commands',
+        },
+        {
+            name: 'StatsRust',
+            image: rustImage,
+            servers: '1 servers',
+            language: 'discord.js',
+            prefix: '/',
+            description: 'Information about players from Rusts API. /help - For commands.',
             website: 'https://www.counter-strike.net/',
             invite: 'https://discord.com/api/oauth2/authorize?client_id=920788315551170640&permissions=824633845824&scope=bot%20applications.commands',
         },
