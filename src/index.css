@@ -32,8 +32,8 @@ body {
 }
 
 @media (max-width: 600px) {
-	body {
-		min-width: 100vw;
+	:root {
+		min-width: 115vw;
 	}
   }
 h1 {
