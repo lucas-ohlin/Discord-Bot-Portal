@@ -1,18 +1,18 @@
+/* Bot Card Styles */
 .bot-card {
     display: flex;
-    flex-direction: column; /* Change to column */
+    flex-direction: column;
     padding: 20px;
-    border: 2px solid #474291;;
+    border: 2px solid #474291;
     border-radius: 10px;
     background-color: #171935;
-    justify-content: space-between; /* Ensures space between bot details and invite button */
-    align-items: flex-start; /* Aligns children to the start */
-    width: 80%;
-    margin: auto;
-    width: 300px;
-    height: 230px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 300px; /* Fixed max-width for consistency */
+    height: auto; /* Height set to auto to accommodate content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color:#fff;
+    margin: 10px; /* Margin to ensure cards don't touch */
+    color: #fff;
 }
 
 .bot-image {
