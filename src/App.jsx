@@ -36,7 +36,7 @@ function App() {
             servers: '1 servers',
             language: 'discord.js',
             prefix: '/',
-            description: 'Information from an open source project. /help - For commands.',
+            description: 'EFT information from an open source project. /help - For commands.',
             website: 'https://github.com/the-hideout/tarkov-api',
             invite: 'https://discord.com/api/oauth2/authorize?client_id=1169304274329669643&permissions=824634107968&scope=bot%20applications.commands',
         },
