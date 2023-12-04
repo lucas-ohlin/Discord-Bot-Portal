@@ -1,8 +1,11 @@
-# React + Vite
+# React-Bot-Portal
+A small website to host my discord bots which are made using NodeJS & Discord.js.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## The website
+The website was made using React + Vite along with Bootstrap.
+<br>
+https://nomads-bots.netlify.app/
 
-Currently, two official plugins are available:
+## How it looks
+<img src="https://github.com/lucas-ohlin/React-Bot-Portal/assets/113690228/b5e415f0-3691-4b5f-acb4-9ec637f7fff6">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
