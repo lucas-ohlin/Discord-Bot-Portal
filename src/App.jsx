@@ -6,6 +6,7 @@ import emcHubImage from './Assets/emchub_icon.png';
 import csImage from './Assets/csgoLogo.png';
 import rustImage from './Assets/rustLogo.png';
 import tarkovImage from './Assets/tarkovLogo.png';
+import gambaImage from './Assets/dice.png';
 
 function App() {
 
@@ -50,12 +51,22 @@ function App() {
             website: 'https://rust.facepunch.com/',
             invite: 'https://discord.com/api/oauth2/authorize?client_id=836975617748500520&permissions=824633845824&scope=bot%20applications.commands',
         },
+        {
+            name: 'GambaBot',
+            image: gambaImage,
+            servers: '1 servers',
+            language: 'discord.js',
+            prefix: '/',
+            description: 'Gamble Bot with tons of games + user levels. /help - For commands.',
+            website: 'https://rust.facepunch.com/',
+            invite: 'https://discord.com/api/oauth2/authorize?client_id=1080482607013298196&permissions=824634107968&scope=applications.commands%20bot',
+        },
     ]);
 
     return (
         <>
             <div>
-                <h1>Discord Bot Portal</h1>
+                <h1>Lucas-Ohlin's Discord Bots</h1>
                 <BotList bots={bots} />
             </div>
         </>
