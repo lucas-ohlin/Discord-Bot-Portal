@@ -11,6 +11,9 @@ function BotCard({ bot }) {
 
     return (
         <div className="bot-card">
+            <div className="status-tag" style={{ backgroundColor: bot.activity === 'online' ? 'green' : 'red' }}>
+                {bot.activity}
+            </div>
             <div className="bot-details">
                 <div className="bot-name">
                     <img src={bot.image} alt={bot.name} className="bot-image" />
@@ -41,8 +44,13 @@ function BotCard({ bot }) {
                         </Button>
                     </div>
                 </Modal.Header>
-                <Modal.Body  style={{ justifyContent: 'center' }}>
-                    <p>Data here eventually</p>
+                <Modal.Body>
+                    <h2>Commands</h2>
+                    <ul>
+                        {bot.commands.map((command, index) => (
+                            <li key={index}>{command}</li>
+                        ))}
+                    </ul>
                 </Modal.Body>
                 <Modal.Footer style={{ justifyContent: 'center' }}>
                 </Modal.Footer>

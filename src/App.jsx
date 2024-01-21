@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BotList from './Component/BotList.jsx';
 import './App.css';
 
@@ -8,60 +8,26 @@ import rustImage from './Assets/rustLogo.png';
 import tarkovImage from './Assets/tarkovLogo.png';
 import gambaImage from './Assets/dice.png';
 
-function App() {
+// Bots
+import botsData from './data/bots.json';
 
-    const [bots, setBots] = useState([
-        {
-            name: 'EMCHub',
-            image: emcHubImage,
-            servers: '3 servers',
-            language: 'discord.js',
-            prefix: '/',
-            description: 'Display information provided by EMCs API. /help - For commands.',
-            website: 'https://earthmc.net/',
-            invite: 'https://discord.com/api/oauth2/authorize?client_id=1110920826200526959&permissions=827318455360&scope=applications.commands%20bot',
-        },
-		{
-            name: 'StatsCS',
-            image: csImage,
-            servers: '1 servers',
-            language: 'discord.js',
-            prefix: '/',
-            description: 'Information about players from CS2 & Faceit. /help - For commands.',
-            website: 'https://www.counter-strike.net/',
-            invite: 'https://discord.com/api/oauth2/authorize?client_id=920788315551170640&permissions=824633845824&scope=bot%20applications.commands',
-        },
-        {
-            name: 'TarkovAide',
-            image: tarkovImage,
-            servers: '1 servers',
-            language: 'discord.js',
-            prefix: '/',
-            description: 'EFT information from an open source project. /help - For commands.',
-            website: 'https://github.com/the-hideout/tarkov-api',
-            invite: 'https://discord.com/api/oauth2/authorize?client_id=1169304274329669643&permissions=824634107968&scope=bot%20applications.commands',
-        },
-        {
-            name: 'StatsRust',
-            image: rustImage,
-            servers: '1 servers',
-            language: 'discord.js',
-            prefix: '/',
-            description: 'Information about players from Rusts API. /help - For commands.',
-            website: 'https://rust.facepunch.com/',
-            invite: 'https://discord.com/api/oauth2/authorize?client_id=836975617748500520&permissions=824633845824&scope=bot%20applications.commands',
-        },
-        {
-            name: 'GambaBot',
-            image: gambaImage,
-            servers: '1 servers',
-            language: 'discord.js',
-            prefix: '/',
-            description: 'Gamble Bot with tons of games + user levels. /help - For commands.',
-            website: 'https://rust.facepunch.com/',
-            invite: 'https://discord.com/api/oauth2/authorize?client_id=1080482607013298196&permissions=824634107968&scope=applications.commands%20bot',
-        },
-    ]);
+function App() {
+    const [bots, setBots] = useState([]);
+
+    useEffect(() => {
+        const updatedData = botsData.map(bot => {
+            switch (bot.name) {
+                case 'EMCHub': bot.image = emcHubImage; break;
+                case 'StatsCS': bot.image = csImage; break;
+                case 'TarkovAide': bot.image = tarkovImage; break;
+                case 'StatsRust': bot.image = rustImage; break;
+                case 'GambaBot': bot.image = gambaImage; break;
+                default: break;
+            }
+            return bot;
+        });
+        setBots(updatedData);
+    }, []);
 
     return (
         <>
