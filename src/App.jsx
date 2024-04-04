@@ -32,7 +32,7 @@ function App() {
     return (
         <>
             <div>
-                <h1>Lucas-Ohlin's Discord Bots</h1>
+                <h1>Discord Bot Portfolio</h1>
                 <BotList bots={bots} />
             </div>
         </>

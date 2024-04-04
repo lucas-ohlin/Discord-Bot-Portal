@@ -1,7 +1,7 @@
 [
     {
         "name": "EMCHub",
-        "image": "emchub_icon.png",
+        "image": "logo31.png",
         "servers": "3 servers",
         "language": "discord.js",
         "activity": "online",
@@ -48,7 +48,7 @@
         "activity": "online",
         "prefix": "/",
         "description": "EFT information from an open source project. /help - For commands.",
-        "website": "https://github.com/the-hideout/tarkov-api",
+        "website": "https://tarkovguide.net/",
         "invite": "https://discord.com/api/oauth2/authorize?client_id=1169304274329669643&permissions=824634107968&scope=bot%20applications.commands",
         "commands": [
             "/help",
@@ -56,8 +56,12 @@
             "/trader",
             "/goons",
             "/raidtime",
-            "/spawnchance",
-            "/time"
+            "/time",
+            "/ammo",
+            "/ammo-chart",
+            "/quest",
+            "/boss (optional input)",
+            "/map"
         ]
     },
     {
