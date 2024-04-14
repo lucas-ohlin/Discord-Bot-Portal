@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { faCheckSquare, faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
+import { fab, faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import BotList from './Component/BotList.jsx';
 import './App.css';
 
@@ -32,7 +36,15 @@ function App() {
     return (
         <>
             <div>
-                <h1>Discord Bot Portfolio</h1>
+                <h1>My Socials 🚀</h1>
+                <div className='social-container'>
+                    <a target="_blank" href='https://twitter.com/nomad_swe' className="social-link">
+                        <FontAwesomeIcon icon={faTwitter} className='social-icon'/> Twitter
+                    </a>
+                    <a target="_blank" href='https://discord.gg/qSHKRaCEkm' className="social-link">
+                        <FontAwesomeIcon icon={faDiscord} className='social-icon'/> Discord
+                    </a>
+                </div>
                 <BotList bots={bots} />
             </div>
         </>

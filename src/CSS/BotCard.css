@@ -211,3 +211,38 @@
 .custom-modal .modal-body ul li {
     text-align: center; 
 }
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    /* width: 50%; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #474291;
+    border-radius: 10px;
+    background-color: #171935;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+    background-color: #655ed3;
+    color: #fff;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
