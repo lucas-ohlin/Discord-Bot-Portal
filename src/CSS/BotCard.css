@@ -214,10 +214,10 @@
 
 .social-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 40px;
     margin: 20px;
 }
 
@@ -246,3 +246,12 @@
 .social-icon {
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 828px) {
+    .social-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+  
