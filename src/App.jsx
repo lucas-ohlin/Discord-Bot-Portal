@@ -36,7 +36,7 @@ function App() {
     return (
         <>
             <div>
-                <h1>My Socials 🚀</h1>
+                <h1>My Socials</h1>
                 <div className='social-container'>
                     <a target="_blank" href='https://twitter.com/nomad_swe' className="social-link">
                         <FontAwesomeIcon icon={faTwitter} className='social-icon'/> Twitter
